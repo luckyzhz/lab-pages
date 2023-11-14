@@ -43,4 +43,22 @@ We might write a script to fetch the details of publications through their DOI.
 - International Conference
 - International Journal
 - Domestic Conference
-- Domestic Journal 
+- Domestic Journal
+
+## Notice
+
+```json
+[
+    {
+        "title": "",
+        "coordinator": "",
+        "date": "",
+        "content": ""
+    }
+]
+```
+
+*The 'content' attribute might be a link to a markdown file.*
+
+- Ongoing
+- Completed

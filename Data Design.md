@@ -1,5 +1,100 @@
 # Data Design
 
+> - The 'content' attribute might be a link to a markdown file.
+> - The 'link' attribute might use markdown syntax.
+
+## Home
+
+- Slides
+- Notice
+- News
+
+## Research
+
+```json
+[
+    {
+        "field": "",
+        "subfield": [
+            ""
+        ],
+        "picture": ""
+    }
+]
+```
+
+## Publications
+
+We might write a script to fetch the details of publications through their DOI.
+
+```json
+[
+    ""
+]
+```
+
+- International Conference
+- International Journal
+- Domestic Conference
+- Domestic Journal
+
+## Courses
+
+```json
+[
+    {
+        "title": "",
+        "content": ""
+    }
+]
+```
+
+## Notice
+
+```json
+[
+    {
+        "title": "",
+        "coordinator": "",
+        "date": "",
+        "content": ""
+    }
+]
+```
+
+- Ongoing
+- Completed
+
+## News
+
+```json
+[
+    {
+        "title": "",
+        "date": "",
+        "link": ""
+    }
+]
+```
+
+The content attribute may link to a markdown table.
+
+## Gallery
+
+```json
+[
+    {
+        "title": "",
+        "images": [
+            {
+                "link": "",
+                "caption": ""
+            }
+        ]
+    }
+]
+```
+
 ## Members
 
 ```json
@@ -30,35 +125,16 @@
 - Undergraduate
 - Graduated
 
-## Publications
-
-We might write a script to fetch the details of publications through their DOI.
-
-```json
-[
-    ""
-]
-```
-
-- International Conference
-- International Journal
-- Domestic Conference
-- Domestic Journal
-
-## Notice
+## Contact
 
 ```json
 [
     {
-        "title": "",
-        "coordinator": "",
-        "date": "",
-        "content": ""
+        "address": "",
+        "tel": "",
+        "email": "",
+        "map": ""
     }
 ]
 ```
 
-*The 'content' attribute might be a link to a markdown file.*
-
-- Ongoing
-- Completed

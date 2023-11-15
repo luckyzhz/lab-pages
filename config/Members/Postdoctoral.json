@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Nobita Nobi",
+        "email": "NobitaNobi@test.com",
+        "title": "Postdoctoral",
+        "portrait": "config/Members/portraits/NobitaNobi.png",
+        "website": "https://en.wikipedia.org/wiki/List_of_Doraemon_characters",
+        "researchArea": [
+            "research field 4",
+            "research field 5",
+            "research field 6"
+        ]
+    }
+]

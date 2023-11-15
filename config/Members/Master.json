@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Shizuka Minamoto",
+        "email": "ShizukaMinamoto@test.com",
+        "title": "Doctor",
+        "portrait": "config/Members/portraits/Shizuka_Minamoto.png",
+        "website": "https://en.wikipedia.org/wiki/List_of_Doraemon_characters",
+        "researchArea": [
+            "research field 7",
+            "research field 8",
+            "research field 9"
+        ]
+    },
+    {
+        "name": "Takeshi Goda",
+        "email": "TakeshiGoda@test.com",
+        "title": "Doctor",
+        "portrait": "config/Members/portraits/Gian.png",
+        "website": "https://en.wikipedia.org/wiki/List_of_Doraemon_characters",
+        "researchArea": [
+            "research field 4",
+            "research field 5",
+            "research field 6"
+        ]
+    },
+    {
+        "name": "Suneo Honekawa",
+        "email": "SuneoHonekawa@test.com",
+        "title": "Doctor",
+        "portrait": "config/Members/portraits/Suneo_Honekawa.png",
+        "website": "https://en.wikipedia.org/wiki/List_of_Doraemon_characters",
+        "researchArea": [
+            "research field 4",
+            "research field 5",
+            "research field 6"
+        ]
+    }
+]

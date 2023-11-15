@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Doraemon",
+        "email": "Doraemon@test.com",
+        "title": "Professor",
+        "portrait": "config/Members/portraits/Doraemon.png",
+        "website": "https://en.wikipedia.org/wiki/List_of_Doraemon_characters",
+        "researchArea": [
+            "research field 1",
+            "research field 2",
+            "research field 3"
+        ]
+    }
+]

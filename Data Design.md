@@ -15,7 +15,7 @@
 [
     {
         "field": "",
-        "subfield": [
+        "subfields": [
             ""
         ],
         "picture": ""

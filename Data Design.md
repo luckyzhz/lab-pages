@@ -102,23 +102,17 @@ The content attribute may link to a markdown table.
     {
         "name": "",
         "email": "",
+        "title": "",
         "portrait": "",
         "website": "",
         "researchArea": [
             ""
-        ],
-        "resume": [
-            {
-                "time": "",
-                "experience": ""
-            }
         ]
     }
 ]
 ```
 
-- Principal investigator
-- Co-investigator
+- Professor
 - Postdoctoral
 - PhD
 - Master

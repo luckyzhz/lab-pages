@@ -1,6 +1,4 @@
-import { fetchJson, fetchText } from "./components/base.js";
-import { labMembers } from "./components/labMembers.js";
-import { labResearches } from "./components/labResearches.js";
+import { labMembers, labResearches } from "./components/components.js";
 
 
 

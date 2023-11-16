@@ -17,8 +17,13 @@
 
 <body>
     <div id="app">
-        <lab-members :member-urls="memberUrls"></lab-members>
-        <!-- <lab-researches :research-url="researchUrl"></lab-researches> -->
+        <p>
+            <router-link to="/member">Member</router-link>
+            <router-link to="/research">Research</router-link>
+        </p>
+        <router-view></router-view>
+        <!-- <lab-members :member-urls="memberUrls"></lab-members>
+        <lab-researches :research-url="researchUrl"></lab-researches> -->
     </div>
 </body>
 

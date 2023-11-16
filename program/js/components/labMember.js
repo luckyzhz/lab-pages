@@ -25,7 +25,7 @@ const labMember = {
             <div class="member-research">
                 <h4>Research Area</h4>
                 <ul>
-                    <li v-for="item in member.researchArea" :key="Math.random()">
+                    <li v-for="item in member.researchArea" :key="item">
                         💡 {{item}}
                     </li>
                 </ul>

@@ -1,11 +1,14 @@
 import { labMember } from "./labMember.js";
+import { fetchJson } from "./base.js";
 
 const labMembers = {
-    // `members` is an object;
-    // `category` is an array which is ordered.
+    data: function () {
+        return {
+            members: {},
+        }
+    },
     props: {
-        "members": Object,
-        "categories": Array
+        "memberUrls": Object,
     },
     components: {
         "lab-member": labMember,
@@ -13,14 +16,28 @@ const labMembers = {
     template:
         `
         <div class="lab-members">
-            <div v-for="category in categories" :class="category" :key="Math.random()">
+            <div v-for="(members, category) in members" :class="category" :key="category">
                 <h2>{{category}}</h2>
                 <div>
-                    <lab-member v-for="member in members[category]" :member="member" :key="Math.random()"></lab-member>
+                    <lab-member v-for="member in members" :member="member" :key="member.email"></lab-member>
                 </div>
             </div>
         </div>
-        `
+        `,
+    methods: {
+        fetchMembers: async function () {
+            const result = {};
+            for (const category in this.memberUrls) {
+                const currentMembers =
+                    await fetchJson(this.memberUrls[category]);
+                result[category] = currentMembers;
+            }
+            this.members = result;
+        },
+    },
+    created: async function () {
+        this.fetchMembers();
+    }
 }
 
 export { labMembers };

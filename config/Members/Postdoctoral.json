@@ -1,14 +1,26 @@
 [
     {
-        "name": "Nobita Nobi",
-        "email": "NobitaNobi@test.com",
-        "title": "Postdoctoral",
-        "portrait": "config/Members/portraits/NobitaNobi.png",
-        "website": "https://en.wikipedia.org/wiki/List_of_Doraemon_characters",
+        "name": "Postdoctoral 1",
+        "email": "pd1@test.com",
+        "title": "Doctor",
+        "portrait": "config/Members/portraits/1.png",
+        "website": "#",
         "researchArea": [
-            "research field 4",
-            "research field 5",
-            "research field 6"
+            "research field 1",
+            "research field 2",
+            "research field 3"
+        ]
+    },
+    {
+        "name": "Postdoctoral 2",
+        "email": "pd2@test.com",
+        "title": "Doctor",
+        "portrait": "config/Members/portraits/2.png",
+        "website": "#",
+        "researchArea": [
+            "research field 1",
+            "research field 2",
+            "research field 3"
         ]
     }
 ]

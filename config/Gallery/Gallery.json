@@ -1,0 +1,53 @@
+[
+    {
+        "title": "Activity 1",
+        "images": [
+            {
+                "link": "config/Gallery/pictures/activity1.png",
+                "caption": "Have fun"
+            },
+            {
+                "link": "config/Gallery/pictures/activity2.png",
+                "caption": "Have fun"
+            },
+            {
+                "link": "config/Gallery/pictures/activity3.png",
+                "caption": "Have fun"
+            }
+        ]
+    },
+    {
+        "title": "Activity 2",
+        "images": [
+            {
+                "link": "config/Gallery/pictures/activity2.png",
+                "caption": "Have fun"
+            },
+            {
+                "link": "config/Gallery/pictures/activity1.png",
+                "caption": "Have fun"
+            },
+            {
+                "link": "config/Gallery/pictures/activity3.png",
+                "caption": "Have fun"
+            }
+        ]
+    },
+    {
+        "title": "Activity 3",
+        "images": [
+            {
+                "link": "config/Gallery/pictures/activity3.png",
+                "caption": "Have fun"
+            },
+            {
+                "link": "config/Gallery/pictures/activity2.png",
+                "caption": "Have fun"
+            },
+            {
+                "link": "config/Gallery/pictures/activity1.png",
+                "caption": "Have fun"
+            }
+        ]
+    }
+]

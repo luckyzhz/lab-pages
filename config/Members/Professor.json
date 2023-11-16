@@ -1,10 +1,10 @@
 [
     {
-        "name": "Doraemon",
-        "email": "Doraemon@test.com",
+        "name": "Professor 1",
+        "email": "prof1@test.com",
         "title": "Professor",
-        "portrait": "config/Members/portraits/Doraemon.png",
-        "website": "https://en.wikipedia.org/wiki/List_of_Doraemon_characters",
+        "portrait": "config/Members/portraits/1.png",
+        "website": "#",
         "researchArea": [
             "research field 1",
             "research field 2",

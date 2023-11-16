@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Notice 1",
+        "coordinator": "Somebody",
+        "date": "2023-11-01",
+        "content": "Please be informed that our services will undergo scheduled maintenance on December 5, 2023, from 10:00 PM to 2:00 AM (UTC). During this time, all platforms will be temporarily unavailable. We apologize for any inconvenience and appreciate your understanding as we work to enhance our services."
+    },
+    {
+        "title": "Notice 2",
+        "coordinator": "Somebody",
+        "date": "2023-10-01",
+        "content": "Please be informed that our services will undergo scheduled maintenance on December 5, 2023, from 10:00 PM to 2:00 AM (UTC). During this time, all platforms will be temporarily unavailable. We apologize for any inconvenience and appreciate your understanding as we work to enhance our services."
+    },
+    {
+        "title": "Notice 3",
+        "coordinator": "Somebody",
+        "date": "2023-09-01",
+        "content": "Please be informed that our services will undergo scheduled maintenance on December 5, 2023, from 10:00 PM to 2:00 AM (UTC). During this time, all platforms will be temporarily unavailable. We apologize for any inconvenience and appreciate your understanding as we work to enhance our services."
+    }
+]

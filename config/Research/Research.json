@@ -1,32 +1,29 @@
 [
     {
-        "field": "Web & Web security",
+        "field": "Research Field 1",
         "subfields": [
-            "JavaScript and Hybrid Application",
-            "Effective Access Control for Web Data"
+            "Sub Research Field 1",
+            "Sub Research Field 2",
+            "Sub Research Field 3"
         ],
-        "picture": "config/Research/pictures/Web & Web security.png"
+        "picture": "config/Research/pictures/research.png"
     },
     {
-        "field": "Two",
+        "field": "Research Field 2",
         "subfields": [
-            "2.1",
-            "2.2",
-            "2.3",
-            "2.4"
+            "Sub Research Field 1",
+            "Sub Research Field 2",
+            "Sub Research Field 3"
         ],
-        "picture": "config/Research/pictures/Web & Web security.png"
+        "picture": "config/Research/pictures/research.png"
     },
     {
-        "field": "Three",
+        "field": "Research Field 3",
         "subfields": [
-            "3.1",
-            "3.2",
-            "3.3",
-            "3.4",
-            "3.5",
-            "3.6"
+            "Sub Research Field 1",
+            "Sub Research Field 2",
+            "Sub Research Field 3"
         ],
-        "picture": "config/Research/pictures/Web & Web security.png"
+        "picture": "config/Research/pictures/research.png"
     }
 ]

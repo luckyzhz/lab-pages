@@ -29,7 +29,10 @@ We might write a script to fetch the details of publications through their DOI.
 
 ```json
 [
-    ""
+    {
+        "cite": "",
+        "link": ""
+    }
 ]
 ```
 

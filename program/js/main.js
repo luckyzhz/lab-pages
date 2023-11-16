@@ -9,7 +9,7 @@ const app = new Vue({
         "lab-researches": labResearches,
     },
     data: {
-        members: {}, // 如果要新增 key，应直接指向一个新的对象，以使 Vue 能正确追踪数据变化
+        members: {}, // 如果要新增 key/value 键值对，应直接指向一个新的对象，以使 Vue 能正确追踪数据变化
         memberCategories: [
             "Professor",
             "Postdoctoral",
@@ -17,11 +17,13 @@ const app = new Vue({
             "Master",
             "Undergraduate"
         ],
-        researches: [],
+        urls: {
+            researches: `config/Research/Research.json`,
+            membersBase: `config/Members/`,
+        },
     },
     created: async function () {
         this.fetchMembers();
-        this.fetchResearches();
     },
     methods: {
         fetchMembers: async function () {
@@ -35,10 +37,5 @@ const app = new Vue({
             }
             this.members = result;
         },
-        fetchResearches: async function () {
-            let url = `config/Research/Research.json`;
-            this.researches = await fetchJson(url);
-        }
     }
 })
-

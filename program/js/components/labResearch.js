@@ -11,7 +11,7 @@ const labResearch = {
             </div>
             <div>
                 <ul>
-                    <li v-for="subfield in research.subfields" :key="Math.random()">
+                    <li v-for="subfield in research.subfields" :key="subfield">
                         {{ subfield }}
                     </li>
                 </ul>

@@ -1,6 +1,7 @@
-import { labMembers, labResearches } from "./components/components.js";
+import { labContacts, labMembers, labResearches } from "./components/components.js";
 
 // Set all the urls needed
+const contactUrl = `config/Contact/Contact.json`;
 const researchUrl = `config/Research/Research.json`;
 const memberCategories = [
     "Professor",
@@ -21,6 +22,13 @@ const memberUrls = function () {
 
 // Configure routes information
 const routes = [
+    {
+        path: "/contact",
+        component: labContacts,
+        props: {
+            contactUrl: contactUrl,
+        }
+    },
     {
         path: "/research",
         component: labResearches,

@@ -3,7 +3,7 @@
         "name": "Postdoctoral 1",
         "email": "pd1@test.com",
         "title": "Doctor",
-        "portrait": "config/Members/portraits/1.png",
+        "portrait": "config/Members/portraits/2.png",
         "website": "#",
         "researchArea": [
             "research field 1",
@@ -15,7 +15,7 @@
         "name": "Postdoctoral 2",
         "email": "pd2@test.com",
         "title": "Doctor",
-        "portrait": "config/Members/portraits/2.png",
+        "portrait": "config/Members/portraits/3.png",
         "website": "#",
         "researchArea": [
             "research field 1",

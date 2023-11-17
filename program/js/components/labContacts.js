@@ -23,12 +23,12 @@ const labContacts = {
         </div>
         `,
     methods: {
-        fetchContacts: async function (url) {
-            this.contacts = await fetchJson(url);
+        fetchContacts: async function () {
+            this.contacts = await fetchJson(this.contactUrl);
         }
     },
     created: async function () {
-        this.fetchContacts(this.contactUrl);
+        this.fetchContacts();
     }
 }
 

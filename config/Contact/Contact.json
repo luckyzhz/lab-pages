@@ -1,14 +1,18 @@
 [
     {
-        "address": "Address 1",
-        "tel": "010-1111-1111",
-        "email": "somebody1@test.com",
-        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d406326.701186334!2d126.52673406092755!3d37.28500426097844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6ef2f5a7cb73%3A0x26b59cb3d9af4a46!2z5rGJ6Ziz5aSn5a2m5qChIEVSSUNB!5e0!3m2!1szh-CN!2skr!4v1700165528243!5m2!1szh-CN!2skr"
+        "contactInfo": {
+            "address": "Address 1",
+            "tel": "010-1111-1111",
+            "email": "somebody1@test.com"
+        },
+        "embeddedMapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d406326.701186334!2d126.52673406092755!3d37.28500426097844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6ef2f5a7cb73%3A0x26b59cb3d9af4a46!2z5rGJ6Ziz5aSn5a2m5qChIEVSSUNB!5e0!3m2!1szh-CN!2skr!4v1700165528243!5m2!1szh-CN!2skr"
     },
     {
-        "address": "Address 2",
-        "tel": "010-2222-2222",
-        "email": "somebody2@test.com",
-        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d406326.701186334!2d126.52673406092755!3d37.28500426097844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4a6aa0ca0af%3A0xdb44fb75306e035c!2z5rGJ6Ziz5aSn5a2m!5e0!3m2!1szh-CN!2skr!4v1700165548061!5m2!1szh-CN!2skr"
+        "contactInfo": {
+            "address": "Address 2",
+            "tel": "010-2222-2222",
+            "email": "somebody2@test.com"
+        },
+        "embeddedMapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d406326.701186334!2d126.52673406092755!3d37.28500426097844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4a6aa0ca0af%3A0xdb44fb75306e035c!2z5rGJ6Ziz5aSn5a2m!5e0!3m2!1szh-CN!2skr!4v1700165548061!5m2!1szh-CN!2skr"
     }
 ]

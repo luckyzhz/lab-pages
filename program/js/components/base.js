@@ -33,4 +33,13 @@ const fetchText = async function (url) {
     }
 }
 
-export { capitalize, fetchJson, fetchText };
+const fetchMarkdown = async function (url) {
+    try {
+        const text = await fetchText(url);
+        return marked.parse(text); // Parse Markdown to HTML
+    } catch (error) {
+        console.error(`Could not get Markdown file: ${error}\n${url}`);
+    }
+}
+
+export { capitalize, fetchJson, fetchText, fetchMarkdown };

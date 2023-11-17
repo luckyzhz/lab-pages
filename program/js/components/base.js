@@ -1,5 +1,12 @@
 // Here are some commonly used utility functions
 
+const capitalize = function (str) {
+    if (str && typeof str === 'string') {
+        return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+    }
+    return str;
+}
+
 const fetchJson = async function (url) {
     try {
         const response = await fetch(url);
@@ -26,4 +33,4 @@ const fetchText = async function (url) {
     }
 }
 
-export { fetchJson, fetchText };
+export { capitalize, fetchJson, fetchText };

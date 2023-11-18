@@ -1,0 +1,48 @@
+import { fetchJson } from "./base.js";
+import { labNotice } from "./labNotice.js";
+
+const labNotices = {
+    data: function () {
+        return {
+            notices: [],
+            category: "Ongoing",
+        }
+    },
+    props: {
+        noticeUrlBase: String,
+    },
+    components: {
+        "lab-notice": labNotice,
+    },
+    methods: {
+        fetchNotices: async function () {
+            const url = this.noticeUrlBase + this.category + ".json";
+            this.notices = await fetchJson(url);
+        },
+        toggleNotices: async function (event) {
+            this.category = event.target.textContent;
+            this.fetchNotices();
+        }
+    },
+    created: async function () {
+        this.fetchNotices();
+    },
+    template:
+        `
+        <div class="lab-notices">
+            <h2>Notices</h2>
+            <div class="control">
+                <div class="button" @click.stop="toggleNotices">Ongoing</div>
+                <div class="button" @click.stop="toggleNotices">Completed</div>
+            </div>
+            <div class="table-header">
+                <div>Title</div>
+                <div>Coordinator</div>
+                <div>Date</div>
+            </div>
+            <lab-notice v-for="notice in notices" :notice="notice" :key="notice.title + notice.date"></lab-notice>
+        </div>
+        `
+}
+
+export { labNotices };

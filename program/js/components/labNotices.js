@@ -9,19 +9,19 @@ const labNotices = {
         }
     },
     props: {
-        noticeUrlBase: String,
+        noticesUrlBase: String,
     },
     components: {
         "lab-notice": labNotice,
     },
     methods: {
         fetchNotices: async function () {
-            const url = this.noticeUrlBase + this.category + ".json";
+            const url = this.noticesUrlBase + this.category + ".json";
             this.notices = await fetchJson(url);
         },
         toggleNotices: async function (event) {
             this.category = event.target.textContent;
-            this.fetchNotices();
+            await this.fetchNotices();
         }
     },
     created: async function () {

@@ -5,6 +5,7 @@ import {
     labResearches,
     labGallery,
     labNotices,
+    labPublications,
 } from "./components/components.js";
 
 // Set all the urls needed
@@ -12,7 +13,8 @@ const coursesUrl = `config/Courses/Courses.md`;
 const contactUrl = `config/Contact/Contact.json`;
 const researchUrl = `config/Research/Research.json`;
 const galleryUrl = `config/Gallery/Gallery.json`;
-const noticeUrlBase = `config/Notices/`;
+const noticesUrlBase = `config/Notices/`;
+const publicationsUrlBase = `config/Publications/`;
 const memberCategories = [
     "Professor",
     "Postdoctoral",
@@ -71,7 +73,14 @@ const routes = [
         path: "/notices",
         component: labNotices,
         props: {
-            noticeUrlBase: noticeUrlBase,
+            noticesUrlBase: noticesUrlBase,
+        },
+    },
+    {
+        path: "/publications",
+        component: labPublications,
+        props: {
+            publicationsUrlBase: publicationsUrlBase,
         },
     },
 ];

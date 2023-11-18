@@ -4,7 +4,7 @@ import { fetchJson } from "./base.js";
 const labMembers = {
     data: function () {
         return {
-            members: {},
+            members: [],
         }
     },
     props: {

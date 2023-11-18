@@ -18,7 +18,7 @@ const labAlbum = {
                 }
             }
         },
-        toLastImage: function () {
+        toPreviousImage: function () {
             this.currentImage--;
         },
         toNextImage: function () {
@@ -37,7 +37,7 @@ const labAlbum = {
             </div>
             <div class="image-box">
                 <img :src="album.images[currentImage].link">
-                <div class="left-button" @click.stop="toLastImage" v-show="open && currentImage > 0">&lt;</div>
+                <div class="left-button" @click.stop="toPreviousImage" v-show="open && currentImage > 0">&lt;</div>
                 <div class="right-button" @click.stop="toNextImage" v-show="open && currentImage < album.images.length - 1">
                     &gt;</div>
                 <div class="title" v-show="!open">{{album.title}}</div>

@@ -2,13 +2,15 @@ import {
     labCourses,
     labContacts,
     labMembers,
-    labResearches
+    labResearches,
+    labGallery,
 } from "./components/components.js";
 
 // Set all the urls needed
 const coursesUrl = `config/Courses/Courses.md`;
 const contactUrl = `config/Contact/Contact.json`;
 const researchUrl = `config/Research/Research.json`;
+const galleryUrl = `config/Gallery/Gallery.json`;
 const memberCategories = [
     "Professor",
     "Postdoctoral",
@@ -56,7 +58,13 @@ const routes = [
             memberUrls: memberUrls,
         },
     },
-
+    {
+        path: "/gallery",
+        component: labGallery,
+        props: {
+            galleryUrl: galleryUrl,
+        },
+    },
 ];
 const router = new VueRouter({
     routes: routes,

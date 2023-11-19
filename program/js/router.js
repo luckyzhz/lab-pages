@@ -18,7 +18,7 @@ const publicationsUrlBase = `config/Publications/`;
 const memberCategories = [
     "Professor",
     "Postdoctoral",
-    "Phd",
+    "PhD",
     "Master",
     "Undergraduate"
 ];

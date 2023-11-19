@@ -39,9 +39,11 @@ const labGallery = {
         toPage: function (event) {
             // the type of value from input box is always string
             const pageValue = Number(event.target.value);
-            if (pageValue >= 1 && pageValue <= this.pages) {
-                this.currentPage = pageValue;
+            let remainder = pageValue % this.pages;
+            if (remainder === 0) {
+                remainder = this.pages;
             }
+            this.currentPage = remainder;
         },
     },
     created: async function () {

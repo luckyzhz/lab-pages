@@ -1,4 +1,4 @@
-import { fetchJson } from "./base.js";
+import { fetchJson, removeClassFromSiblings } from "./base.js";
 import { labNotice } from "./labNotice.js";
 
 const labNotices = {
@@ -20,6 +20,8 @@ const labNotices = {
             this.notices = await fetchJson(url);
         },
         toggleNotices: async function (event) {
+            removeClassFromSiblings(event.target, 'active');
+            event.target.classList.add('active');
             this.category = event.target.textContent;
             await this.fetchNotices();
         }
@@ -32,7 +34,7 @@ const labNotices = {
         <div class="lab-notices">
             <h1>Notices</h1>
             <div class="control">
-                <div class="button" @click.stop="toggleNotices">Ongoing</div>
+                <div class="button active" @click.stop="toggleNotices">Ongoing</div>
                 <div class="button" @click.stop="toggleNotices">Completed</div>
             </div>
             <div class="table-header">

@@ -3,6 +3,8 @@
 }
 
 .lab-members h2 {
+    position: sticky;
+    top: 3rem;
     font-size: 1.5rem;
     line-height: 2;
     color: #d9d8d7ee;

@@ -58,7 +58,9 @@ const labGallery = {
             </div>
             <div class="gallery-control">
                 <div class="left-button" @click.stop="currentPage--" v-show="currentPage > 1">&lt;</div>
-                <input type="number" @keyup.enter="toPage" :value="currentPage"> / {{ pages }}
+                <div class="to-page">
+                    <input @keyup.enter="toPage" :value="currentPage"> / {{ pages }}
+                </div>
                 <div class="right-button" @click.stop="currentPage++" v-show="currentPage < pages">&gt;</div>
             </div>
         </div>

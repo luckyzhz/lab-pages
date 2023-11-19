@@ -9,6 +9,14 @@
     gap: 0.5rem;
 }
 
+.lab-album {
+    cursor: zoom-in;
+}
+
+.lab-album.open {
+    cursor: zoom-out;
+}
+
 /* -------------Image----------- */
 .lab-gallery img {
     display: block;
@@ -89,4 +97,30 @@
     height: 100dvh;
     background-color: #000000bb;
     color: white;
+}
+
+/* -----整个 gallery 的页面控制按钮----- */
+.gallery-control {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0.5rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.gallery-control input {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 3em;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-control .left-button,
+.gallery-control .right-button {
+    cursor: pointer;
 }

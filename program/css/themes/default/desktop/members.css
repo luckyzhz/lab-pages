@@ -40,13 +40,13 @@
 }
 
 .member-portrait {
-    display: grid;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .member-portrait img {
-    vertical-align: middle;
-    display: inline;
+    display: block;
     width: 8rem;
     height: 8rem;
     border: 1px solid #0f2026ee;

@@ -11,6 +11,10 @@
     box-shadow: 0.2rem 0.2em 0.2em #00000088;
 }
 
+.lab-contacts>*:nth-child(n+2) {
+    animation: fadeIn 1s ease-out forwards;
+}
+
 .lab-contact {
     display: flex;
     flex-wrap: wrap;

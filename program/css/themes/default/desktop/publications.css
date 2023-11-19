@@ -1,10 +1,10 @@
-.lab-publications>:nth-child(-n+2) {
+.lab-publications>h1 {
     margin-bottom: 1rem;
 }
 
 .lab-publications>*:nth-child(n+2) {
     animation: fadeIn 1s ease-out forwards;
-    margin: 0 0 4px 0;
+    margin-bottom: 4px;
 }
 
 .lab-publications .control {
@@ -15,7 +15,7 @@
     gap: 1px;
 }
 
-.lab-publications .button {
+.lab-publications .control .button {
     flex-grow: 1;
     line-height: 2;
     text-align: center;

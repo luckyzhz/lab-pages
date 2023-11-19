@@ -1,0 +1,95 @@
+.lab-notices h1 {
+    margin-bottom: 1rem;
+}
+
+.lab-notices>*:nth-child(n+2) {
+    animation: fadeIn 1s ease-out forwards;
+    margin-bottom: 4px;
+}
+
+.lab-notices .control {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1px;
+}
+
+.lab-notices .control .button {
+    flex-grow: 1;
+    line-height: 2;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #39733dee;
+    color: #d9d8d7ee;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.lab-notices .button:hover,
+.lab-notices .button.active {
+    background-color: #d9d8d7ee;
+    color: #39733dee;
+    /* Enlarged to 1.1 times its original size */
+    transform: scale(1, 1.1);
+    /* Add a shadow to enhance the floating effect */
+    box-shadow: 0 0.2rem 0.2rem #00000088;
+}
+
+.lab-notices .table-header,
+.lab-notice .summary {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1px;
+    line-height: 2;
+    box-shadow: 0.2rem 0.2em 0.2em #00000088;
+}
+
+.lab-notices .table-header>*,
+.lab-notice .summary>* {
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+    color: #d9d8d7ee;
+    overflow-wrap: break-word;
+}
+
+.lab-notices .table-header>*:nth-child(1),
+.lab-notice .summary>*:nth-child(1) {
+    width: 70%;
+}
+
+.lab-notices .table-header>*:nth-child(n+2),
+.lab-notice .summary>*:nth-child(n+2) {
+    width: 15%;
+}
+
+.lab-notices .table-header>* {
+    background-color: #0f2026ee;
+}
+
+.lab-notice:hover {
+    cursor: pointer;
+}
+
+.lab-notice .summary>* {
+    color: #0f2026ee;
+}
+
+.lab-notice:nth-child(2n+1) .summary>* {
+    background-color: #d9d8d788;
+}
+
+.lab-notice:nth-child(2n+2) .summary>* {
+    background-color: #648c8588;
+}
+
+.lab-notice .content {
+    border: 1px solid #0f2026ee;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 1rem;
+    box-shadow: 0.2rem 0.2em 0.2em #00000088;
+}

@@ -1,5 +1,5 @@
 import { labPublication } from "./labPublication.js"
-import { fetchJson } from "./base.js";
+import { fetchJson, removeClassFromSiblings } from "./base.js";
 
 const labPublications = {
     data: function () {
@@ -20,6 +20,8 @@ const labPublications = {
             this.publications = await fetchJson(url);
         },
         togglePublications: async function (event) {
+            removeClassFromSiblings(event.target, 'active');
+            event.target.classList.add('active');
             this.category = event.target.textContent;
             await this.fetchPublications();
         },
@@ -30,9 +32,9 @@ const labPublications = {
     template:
         `
         <div class="lab-publications">
-            <h2>Publications</h2>
+            <h1>Publications</h1>
             <div class="control">
-                <div class="button" @click.stop="togglePublications">International Conference</div>
+                <div class="button active" @click.stop="togglePublications">International Conference</div>
                 <div class="button" @click.stop="togglePublications">International Journal</div>
                 <div class="button" @click.stop="togglePublications">Domestic Conference</div>
                 <div class="button" @click.stop="togglePublications">Domestic Journal</div>

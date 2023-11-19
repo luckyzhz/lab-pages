@@ -1,0 +1,8 @@
+@import url(./base.css) layer(base);
+@import url(./animation.css) layer(animation);
+
+@import url(./desktop/navigationBar.css) layer(navigationBar);
+@import url(./desktop/main.css) layer(main);
+@import url(./desktop/research.css) layer(research);
+@import url(./desktop/publications.css) layer(publications);
+@import url(./desktop/courses.css) layer(courses);

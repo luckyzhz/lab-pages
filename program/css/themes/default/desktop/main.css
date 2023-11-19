@@ -1,0 +1,27 @@
+main>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+main>*>* {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+main>*>h1 {
+    width: 90%;
+    align-self: self-start;
+    margin: 0;
+    padding: 0 0 0 10%;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: #0f2026ee;
+    background-color: #648c85ee;
+    border-radius: 0 0.5rem 0.5rem 0;
+    animation: slideInFromLeft 1s ease-out forwards;
+    box-shadow: 0.2rem 0.2em 0.2em #00000088;
+}

@@ -42,4 +42,26 @@ const fetchMarkdown = async function (url) {
     }
 }
 
-export { capitalize, fetchJson, fetchText, fetchMarkdown };
+const getSiblings = function (element) {
+    // 获取父元素并从父元素获取所有子元素（包括当前元素）
+    var siblings = Array.from(element.parentNode.children);
+
+    // 过滤掉当前元素，只保留兄弟元素
+    return siblings.filter(function (sibling) {
+        return sibling !== element;
+    });
+}
+
+const removeClassFromSiblings = function (element, className) {
+    // 获取父元素并从父元素获取所有子元素（包括当前元素）
+    const siblings = Array.from(element.parentNode.children);
+
+    // 遍历所有兄弟元素，移除指定的类名
+    siblings.forEach(function (sibling) {
+        if (sibling !== element && sibling.classList.contains(className)) {
+            sibling.classList.remove(className);
+        }
+    });
+}
+
+export { capitalize, fetchJson, fetchText, fetchMarkdown, getSiblings, removeClassFromSiblings };

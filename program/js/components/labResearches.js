@@ -16,6 +16,7 @@ const labResearches = {
     template:
         `
         <div class="lab-researches">
+            <h1>Research</h1>
             <lab-research v-for="research in researches" :research="research" :key="research.field">
             </lab-research>
         </div>

@@ -16,7 +16,10 @@ const labCourses = {
     },
     template:
         `
-        <div class="lab-courses" v-html="courses"></div>
+        <div class="lab-courses-box">
+            <h1>Courses</h1>
+            <div class="lab-courses" v-html="courses"></div>
+        </div>
         `,
     created: async function () {
         this.fetchCourses();

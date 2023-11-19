@@ -8,7 +8,7 @@ const labContacts = {
         }
     },
     props: {
-        contactUrl: String,
+        contactsUrl: String,
     },
     components: {
         "lab-contact": labContact,
@@ -16,6 +16,7 @@ const labContacts = {
     template:
         `
         <div class="lab-contacts">
+            <h1>Contacts</h1>
             <div v-for="(contact, index) in contacts">
                 <h2>Contact {{index + 1}}</h2>
                 <lab-contact :contact="contact" :key="contact.embeddedMapUrl"></lab-contact>
@@ -24,7 +25,7 @@ const labContacts = {
         `,
     methods: {
         fetchContacts: async function () {
-            this.contacts = await fetchJson(this.contactUrl);
+            this.contacts = await fetchJson(this.contactsUrl);
         }
     },
     created: async function () {

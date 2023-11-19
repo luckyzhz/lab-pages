@@ -50,7 +50,7 @@ const labGallery = {
     template:
         `
         <div class="lab-gallery">
-            <h2>Gallery</h2>
+            <h1>Gallery</h1>
             <div class="albums">
                 <lab-album v-for="album in this.currentAlbums" :album=album :key="album.title"></lab-album>
             </div>

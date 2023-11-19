@@ -30,7 +30,7 @@ const labNotices = {
     template:
         `
         <div class="lab-notices">
-            <h2>Notices</h2>
+            <h1>Notices</h1>
             <div class="control">
                 <div class="button" @click.stop="toggleNotices">Ongoing</div>
                 <div class="button" @click.stop="toggleNotices">Completed</div>

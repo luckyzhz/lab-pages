@@ -16,6 +16,7 @@ const labMembers = {
     template:
         `
         <div class="lab-members">
+            <h1>Members</h1>
             <div v-for="(members, category) in members" :class="category" :key="category">
                 <h2>{{category}}</h2>
                 <div>

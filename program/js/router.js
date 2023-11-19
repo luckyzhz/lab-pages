@@ -10,7 +10,7 @@ import {
 
 // Set all the urls needed
 const coursesUrl = `config/Courses/Courses.md`;
-const contactUrl = `config/Contact/Contact.json`;
+const contactsUrl = `config/Contacts/Contacts.json`;
 const researchUrl = `config/Research/Research.json`;
 const galleryUrl = `config/Gallery/Gallery.json`;
 const noticesUrlBase = `config/Notices/`;
@@ -42,10 +42,10 @@ const routes = [
         }
     },
     {
-        path: "/contact",
+        path: "/contacts",
         component: labContacts,
         props: {
-            contactUrl: contactUrl,
+            contactsUrl: contactsUrl,
         }
     },
     {
@@ -56,7 +56,7 @@ const routes = [
         }
     },
     {
-        path: "/member",
+        path: "/members",
         component: labMembers,
         props: {
             memberUrls: memberUrls,

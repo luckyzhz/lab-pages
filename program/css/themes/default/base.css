@@ -1,0 +1,21 @@
+/* Set alternative box model for all elements */
+html {
+    box-sizing: border-box;
+    transition: all 0.5s;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    transition: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+}

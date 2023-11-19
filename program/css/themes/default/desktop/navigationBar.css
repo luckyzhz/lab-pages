@@ -1,0 +1,41 @@
+#app>nav {
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1px;
+    animation: slideInFromTop 1s ease-out forwards;
+    z-index: 1;
+}
+
+nav a {
+    flex-grow: 1;
+    line-height: 2;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
+
+    background-color: #0f2026ee;
+    color: #d9d8d7ee;
+}
+
+nav a:hover,
+.router-link-active {
+    background-color: #d9d8d7ee;
+    color: #0f2026ee;
+    /* Enlarged to 1.1 times its original size */
+    transform: scale(1, 1.1);
+    /* Add a shadow to enhance the floating effect */
+    box-shadow: 0 0.5em 0.5em #00000088;
+}
+
+/* Logo */
+nav img {
+    display: inline;
+    vertical-align: middle;
+    height: 1.5em;
+}

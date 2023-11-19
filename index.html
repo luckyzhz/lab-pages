@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SELab</title>
 
-    <link rel="stylesheet" href="program/css/main.css">
+    <link rel="stylesheet" href="program/css/themes/default/default.css">
 
     <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="//cdn.jsdelivr.net/npm/vue-router@3/dist/vue-router.js"></script>
@@ -17,18 +17,20 @@
 
 <body>
     <div id="app">
-        <p>
-            <router-link to="/member">Member</router-link>
+        <nav>
+            <a href="#"><img src="./config/Home/pictures/logo.svg"></a>
             <router-link to="/research">Research</router-link>
-            <router-link to="/contact">Contact</router-link>
-            <router-link to="/courses">Courses</router-link>
-            <router-link to="/gallery">Gallery</router-link>
-            <router-link to="/notices">Notices</router-link>
             <router-link to="/publications">Publications</router-link>
-        </p>
-        <router-view></router-view>
-        <!-- <lab-members :member-urls="memberUrls"></lab-members>
-        <lab-researches :research-url="researchUrl"></lab-researches> -->
+            <router-link to="/courses">Courses</router-link>
+            <router-link to="/notices">Notices</router-link>
+            <router-link to="/members">Members</router-link>
+            <router-link to="/gallery">Gallery</router-link>
+            <router-link to="/contacts">Contacts</router-link>
+        </nav>
+        <main>
+            <router-view></router-view>
+        </main>
+        <!-- <lab-members :member-urls="memberUrls"></lab-members> -->
     </div>
 </body>
 

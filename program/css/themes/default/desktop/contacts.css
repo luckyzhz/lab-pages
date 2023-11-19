@@ -1,0 +1,21 @@
+.lab-contacts h1 {
+    margin-bottom: 1rem;
+}
+
+.lab-contacts h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #d9d8d7ee;
+    background-color: #0f2026ee;
+    box-shadow: 0.2rem 0.2em 0.2em #00000088;
+}
+
+.lab-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 1rem;
+}

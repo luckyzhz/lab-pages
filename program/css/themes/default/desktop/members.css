@@ -12,6 +12,10 @@
     box-shadow: 0.2rem 0.2em 0.2em #00000088;
 }
 
+.lab-members>*:nth-child(n+2) {
+    animation: fadeIn 1s ease-out forwards;
+}
+
 .lab-members h3 {
     font-size: 1.2rem;
 }

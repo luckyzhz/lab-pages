@@ -1,0 +1,92 @@
+.lab-gallery h1 {
+    margin-bottom: 1rem;
+}
+
+.lab-gallery>.albums {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0.5rem;
+}
+
+/* -------------Image----------- */
+.lab-gallery img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ------用于子元素的定位参考------- */
+.lab-album .image-box {
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2em 0.2em #00000088;
+    /* overflow 甚至决定了 max-height 能否生效 */
+    overflow: hidden;
+}
+
+/* ----设置相册关闭时 image-box 的长宽比---- */
+*[class="lab-album"] .image-box::before {
+    content: "";
+    display: block;
+    padding-top: calc(100% * 9 / 16);
+}
+
+*[class="lab-album"] .image-box img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+/* --------前进后退按钮--------- */
+.image-box .left-button,
+.image-box .right-button {
+    /* 默认不显示按钮 */
+    display: none;
+    cursor: pointer;
+}
+
+.image-box:hover .left-button,
+.image-box:hover .right-button {
+    /* 只有悬浮的时候才显示按钮 */
+    display: block;
+    position: absolute;
+    width: 2rem;
+    top: 0;
+    bottom: 0;
+    color: white;
+    background-color: #0f202688;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+}
+
+.image-box:hover .left-button {
+    left: 0;
+}
+
+.image-box:hover .right-button {
+    right: 0;
+}
+
+/* -------全屏显示图片------ */
+.lab-album.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #000000bb;
+    color: white;
+}

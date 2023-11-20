@@ -1,0 +1,99 @@
+.carousel-window {
+    width: 400px;
+}
+
+/* ----------盒模型---------- */
+.carousel-window {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-window *,
+.carousel-window *::before,
+.carousel-window *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------全屏显示图片------ */
+.carousel-window {
+    cursor: zoom-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-window.open {
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #000000bb;
+    color: white;
+    cursor: zoom-out;
+}
+
+/* ---------让展示窗口成为子元素的定位参考------ */
+.carousel-window {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2em 0.2em #00000088;
+}
+
+/* -------所有图片成一排------------ */
+.carousel-window .images-bar {
+    display: flex;
+    align-items: stretch;
+    /* 设置动画观测的属性；后面改变改属性，就能平滑过渡 */
+    position: relative;
+    transition: left 1s;
+    left: 0;
+}
+
+.carousel-window .image-box {
+    /* 禁用 flex item 的缩放 */
+    flex: 0 0 100%;
+    /* 让里面的图片居中 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-window .image-box img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* -------------控件----------- */
+/* 点选按钮 */
+.carousel-window .control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
+.carousel-window .indicator {
+    cursor: pointer;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 10rem;
+    background-color: #d9d8d788;
+    border: 1px solid #0f2026ee;
+    box-shadow: 0 0 0.5rem white;
+}
+
+.carousel-window .indicator.active {
+    width: 1rem;
+    background-color: #648c85ee;
+}

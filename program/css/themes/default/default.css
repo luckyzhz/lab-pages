@@ -3,6 +3,7 @@
 
 @import url(./desktop/navigationBar.css) layer(navigationBar);
 @import url(./desktop/main.css) layer(main);
+@import url(./desktop/home.css) layer(home);
 @import url(./desktop/research.css) layer(research);
 @import url(./desktop/publications.css) layer(publications);
 @import url(./desktop/courses.css) layer(courses);

@@ -52,7 +52,7 @@ const carousel = {
     },
     template:
         `
-        <div class="carousel-window" @click.stop="toggleFullScreen">
+        <div class="carousel-window" @click.stop="toggleFullScreen" @mouseover="stopAutoPlay" @mouseout="startAutoPlay">
             <div class="images-bar" ref="imagesBar">
                 <div class="image-box" v-for="image in images">
                     <img :src="image">

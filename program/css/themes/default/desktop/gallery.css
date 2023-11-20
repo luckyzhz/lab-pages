@@ -51,6 +51,12 @@
     object-fit: cover;
 }
 
+/* 相册关闭时，悬浮时略微增大 */
+*[class="lab-album"]:hover .image-box {
+    transform: scale(1.02, 1.02);
+    z-index: 1;
+}
+
 /* --------前进后退按钮--------- */
 .image-box .left-button,
 .image-box .right-button {

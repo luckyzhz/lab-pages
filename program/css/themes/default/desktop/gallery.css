@@ -63,12 +63,6 @@
     /* 默认不显示按钮 */
     display: none;
     cursor: pointer;
-}
-
-.image-box:hover .left-button,
-.image-box:hover .right-button {
-    /* 只有悬浮的时候才显示按钮 */
-    display: block;
     position: absolute;
     width: 2rem;
     top: 0;
@@ -76,18 +70,22 @@
     color: white;
     background-color: #0f202688;
     font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 0;
 }
 
-.image-box:hover .left-button {
+.image-box .left-button {
     left: 0;
 }
 
-.image-box:hover .right-button {
+.image-box .right-button {
     right: 0;
+}
+
+.image-box:hover .left-button,
+.image-box:hover .right-button {
+    /* 只有悬浮的时候才显示按钮 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* -------全屏显示图片------ */

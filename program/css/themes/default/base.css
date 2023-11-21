@@ -4,11 +4,11 @@
     --color-accent: #750014;
     --color-accent-bright: #ff1423;
     /* shadow */
-    --shadow-top: 0 -0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.2);
-    --shadow-bottom: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
-    --shadow-left: -5px 0 5px -5px rgba(0, 0, 0, 0.2);
-    --shadow-right: 5px 0 5px -5px rgba(0, 0, 0, 0.2);
-    --shadow-all: 0 0 5px rgba(0, 0, 0, 0.2);
+    --shadow-top: 0 -6px 6px rgba(0, 0, 0, 0.5);
+    --shadow-bottom: 0 6px 6px rgba(0, 0, 0, 0.5);
+    --shadow-left: -6px 0 6px rgba(0, 0, 0, 0.5);
+    --shadow-right: 6px 0 6px rgba(0, 0, 0, 0.5);
+    --shadow-all: 0 0 6px rgba(0, 0, 0, 0.8);
 }
 
 

@@ -3,12 +3,18 @@
     /* color */
     --color-accent: #750014;
     --color-accent-bright: #ff1423;
+    --color-link: var(--color-accent);
     /* shadow */
     --shadow-top: 0 -6px 6px rgba(0, 0, 0, 0.5);
     --shadow-bottom: 0 6px 6px rgba(0, 0, 0, 0.5);
     --shadow-left: -6px 0 6px rgba(0, 0, 0, 0.5);
     --shadow-right: 6px 0 6px rgba(0, 0, 0, 0.5);
     --shadow-all: 0 0 6px rgba(0, 0, 0, 0.8);
+    /* border */
+    --border-radius: 4px;
+    /* responsive design */
+    --breakpoint-mobile: 30em;
+    --nav-width: max(20em, 20vw);
 }
 
 
@@ -17,7 +23,7 @@ html {
     box-sizing: border-box;
     transition: all 0.5s;
     line-height: 1.5;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
 }
 
 *,

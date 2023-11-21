@@ -1,7 +1,7 @@
 @import url(./base.css) layer(base);
 @import url(./animation.css) layer(animation);
 
-@import url(./desktop/navigationBar.css) layer(navigationBar);
+@import url(./desktop/navigation.css) layer(navigationBar);
 @import url(./desktop/main.css) layer(main);
 @import url(./desktop/home.css) layer(home);
 @import url(./desktop/research.css) layer(research);

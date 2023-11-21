@@ -4,7 +4,7 @@ const labPublication = {
     },
     template:
         `
-        <div class="lab-publicaton">
+        <div class="lab-publication">
             <a :href="publication.link" target="_blank">
                 {{ publication.cite }}
             </a>

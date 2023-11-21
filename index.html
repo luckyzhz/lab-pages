@@ -17,8 +17,10 @@
 
 <body>
     <div id="app">
+        <input type="checkbox" id="toggle-nav" class="toggle" style="display: none;">
+        <label for="toggle-nav" class="button">☰</label>
         <nav>
-            <a href="#"><img src="./config/Home/pictures/logo.svg"></a>
+            <a href="#"><img src="./config/Home/images/logo.png"></a>
             <router-link to="/research">Research</router-link>
             <router-link to="/publications">Publications</router-link>
             <router-link to="/courses">Courses</router-link>
@@ -31,6 +33,8 @@
             <router-view></router-view>
         </main>
         <!-- <lab-members :member-urls="memberUrls"></lab-members> -->
+        <!-- <carousel images-url="config/Home/images.json"></carousel> -->
+        <footer></footer>
     </div>
 </body>
 

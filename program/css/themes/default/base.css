@@ -1,7 +1,14 @@
 /* CSS custom properties (variables) */
 :root {
-    --accent-color: #750014;
-    --bright-accent-color: #ff1423;
+    /* color */
+    --color-accent: #750014;
+    --color-accent-bright: #ff1423;
+    /* shadow */
+    --shadow-top: 0 -0.5rem 0.5rem -0.5rem rgba(0, 0, 0, 0.2);
+    --shadow-bottom: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
+    --shadow-left: -5px 0 5px -5px rgba(0, 0, 0, 0.2);
+    --shadow-right: 5px 0 5px -5px rgba(0, 0, 0, 0.2);
+    --shadow-all: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 

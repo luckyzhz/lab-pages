@@ -69,6 +69,7 @@ nav a {
 
 nav a:hover,
 .router-link-active {
+    font-weight: bolder;
     color: var(--color-accent);
     box-shadow: var(--shadow-bottom);
     border-right-color: var(--color-accent);

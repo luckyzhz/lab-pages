@@ -4,12 +4,10 @@
     align-items: stretch;
     justify-content: center;
     gap: var(--gutter-width);
-    max-width: var(--breakpoint-desktop);
-    margin: auto;
     margin-bottom: calc(var(--gutter-width) * 2);
     box-shadow: var(--shadow-right);
     padding: calc(var(--gutter-width) * 2);
-    border-left: 4px solid var(--color-accent);
+    border-left: var(--border-accent);
 }
 
 .lab-research h2 {

@@ -64,7 +64,7 @@ nav a {
     justify-content: center;
     border-top: var(--border);
     border-bottom: var(--border);
-    border-right: solid black var(--border-radius);
+    border-right: var(--border-bold);
 }
 
 nav a:hover,
@@ -80,7 +80,7 @@ nav>a:first-child {
     width: 100%;
     height: var(--nav-width);
     border: none;
-    border-bottom: solid black var(--border-radius);
+    border-bottom: var(--border-bold);
 }
 
 nav>a:first-child:hover,

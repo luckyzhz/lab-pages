@@ -1,41 +1,95 @@
-nav {
-    margin-bottom: 1rem;
-    position: sticky;
-    top: 0;
-
+label[for="toggle-nav"] {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    bottom: 0;
+    /* Style the hamburger logo */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    justify-content: start;
+    line-height: 1;
+    padding: var(--gutter-width);
+    font-size: var(--h3-font-size);
+    font-weight: bolder;
+    color: var(--color-accent);
+    background-color: rgb(255, 255, 255, 0.5);
+    /* Set width so that CSS can trace transition */
+    width: calc(1em + var(--gutter-width) * 2);
+}
+
+#toggle-nav:checked~label[for="toggle-nav"] {
+    width: calc(var(--nav-width));
+}
+
+
+
+#toggle-nav:checked~main,
+#toggle-nav:checked~footer {
+    margin-left: var(--nav-width);
+}
+
+
+
+nav {
+    position: fixed;
+    width: var(--nav-width);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    overflow: auto;
+    box-shadow: var(--shadow-all);
+    /* Style for inner elements */
+    display: flex;
+    flex-direction: column;
     align-items: stretch;
-    gap: 1px;
-    animation: slideInFromTop 1s ease-out forwards;
-    z-index: 1;
+    justify-content: start;
+    gap: var(--gutter-width);
+    padding-bottom: 3rem;
+    font-size: var(--h3-font-size);
+}
+
+#toggle-nav:checked~nav {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 nav a {
-    flex-grow: 1;
-    line-height: 2;
-    text-align: center;
+    color: black;
     text-decoration: none;
-    border-radius: 0 0 4px 4px;
-
-    background-color: #0f2026ee;
-    color: #d9d8d7ee;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: var(--border);
+    border-bottom: var(--border);
+    border-right: solid black var(--border-radius);
 }
 
 nav a:hover,
 .router-link-active {
-    background-color: #d9d8d7ee;
-    color: #0f2026ee;
-    /* Enlarged to 1.1 times its original size */
-    transform: scale(1, 1.1);
-    /* Add a shadow to enhance the floating effect */
-    box-shadow: 0 0.5em 0.5em #00000088;
+    color: var(--color-accent);
+    box-shadow: var(--shadow-bottom);
+    border-right-color: var(--color-accent);
 }
 
 /* Logo */
+nav>a:first-child {
+    width: 100%;
+    height: var(--nav-width);
+    border: none;
+    border-bottom: solid black var(--border-radius);
+}
+
+nav>a:first-child:hover,
+.router-link-active:first-child {
+    border-bottom-color: var(--color-accent);
+}
+
 nav img {
-    display: inline;
-    vertical-align: middle;
-    height: 1.5em;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 12.5%;
 }

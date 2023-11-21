@@ -5,16 +5,22 @@
     --color-accent-bright: #ff1423;
     --color-link: var(--color-accent);
     /* shadow */
-    --shadow-top: 0 -6px 6px rgba(0, 0, 0, 0.5);
-    --shadow-bottom: 0 6px 6px rgba(0, 0, 0, 0.5);
-    --shadow-left: -6px 0 6px rgba(0, 0, 0, 0.5);
-    --shadow-right: 6px 0 6px rgba(0, 0, 0, 0.5);
-    --shadow-all: 0 0 6px rgba(0, 0, 0, 0.8);
-    /* border */
+    --shadow-top: 0 -4px 4px rgb(0, 0, 0, 0.5);
+    --shadow-bottom: 0 4px 4px rgb(0, 0, 0, 0.5);
+    --shadow-left: -4px 0 4px rgb(0, 0, 0, 0.5);
+    --shadow-right: 4px 0 4px rgb(0, 0, 0, 0.5);
+    --shadow-all: 0 0 4px rgb(0, 0, 0, 0.8);
+    /* border and gutter */
+    --border: 1px solid black;
     --border-radius: 4px;
+    --gutter-width: 0.5rem;
+    /* headings size */
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.2rem;
     /* responsive design */
     --breakpoint-mobile: 30em;
-    --nav-width: max(20em, 20vw);
+    --nav-width: max(10rem, 15vw);
 }
 
 
@@ -38,4 +44,17 @@ html {
 ul,
 ol {
     list-style-position: inside;
+}
+
+/* cursor */
+.button {
+    cursor: pointer;
+}
+
+.full-screen {
+    cursor: zoom-in;
+}
+
+.full-screen.open {
+    cursor: zoom-out;
 }

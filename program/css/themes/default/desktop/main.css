@@ -2,6 +2,11 @@ main {
     padding: calc(var(--gutter-width) * 2);
 }
 
+main>* {
+    max-width: var(--breakpoint-desktop);
+    margin: auto;
+}
+
 h1::first-letter {
     color: white;
     background-color: var(--color-accent);

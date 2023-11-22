@@ -10,6 +10,10 @@
     border-left: var(--border-accent);
 }
 
+.lab-research:hover {
+    border-left-color: var(--color-accent-bright);
+}
+
 .lab-research h2 {
     width: 100%;
 }

@@ -3,7 +3,7 @@ main {
 }
 
 main>* {
-    max-width: var(--breakpoint-tablet);
+    max-width: var(--breakpoint-desktop);
     margin: auto;
 }
 

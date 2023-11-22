@@ -21,7 +21,7 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.2rem;
     /* responsive design */
-    --breakpoint-mobile: 30rem;
+    --breakpoint-mobile: 32rem;
     --breakpoint-tablet: 48rem;
     --breakpoint-desktop: 64rem;
     --nav-width: max(10rem, 15vw);

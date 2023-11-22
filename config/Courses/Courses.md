@@ -1,5 +1,7 @@
 ## Undergraduate
 
+<div class="table-container">
+
 | No.     | Title                               | 2020-2 | 2020-1 | 2019-2 | 2019-1 | 2018-2 | 2018-1 | 2017-2 | 2017-1 |
 | ------- | ----------------------------------- | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | CSE107  | Logical Fundamentals of Programming |        |        |        |        |        |        |   ✅    |        |
@@ -8,7 +10,11 @@
 | CSE326  | Web Application Development         |        |        |        |        |        |   ✅    |        |        |
 | CSE4006 | Software Engineering                |   ✅    |        |   ✅    |        |        |        |        |   ✅    |
 
+</div>
+
 ## Postgraduate
+
+<div class="table-container">
 
 | No.     | Title                                  | 2020-2 | 2020-1 | 2019-2 | 2019-1 | 2018-2 | 2018-1 | 2017-2 | 2017-1 |
 | ------- | -------------------------------------- | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
@@ -17,3 +23,5 @@
 | CSE609  | Model Checking                         |        |        |        |   ✅    |        |        |        |        |
 | CSE639  | Special Topics in Software Engineering |        |        |        |        |        |   ✅    |        |        |
 | CSE6050 | Advanced Software Engineering          |   ✅    |        |   ✅    |        |        |        |        |   ✅    |
+
+</div>

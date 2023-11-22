@@ -17,7 +17,7 @@ h1::first-letter {
 }
 
 h1 {
-    margin: calc(var(--gutter-width) * 2);
+    margin: calc(var(--gutter-width) * 2) 0;
     text-align: center;
     animation: fadeIn 1s ease-out forwards;
 }

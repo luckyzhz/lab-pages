@@ -94,3 +94,7 @@ nav img {
     max-height: 100%;
     padding: 12.5%;
 }
+
+nav>a:first-child:hover img {
+    transform: scale(1.02);
+}

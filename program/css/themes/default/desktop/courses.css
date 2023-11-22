@@ -1,39 +1,39 @@
-.lab-courses-box>h1 {
-    margin-bottom: 1rem;
-}
-
-.lab-courses {
-    animation: fadeIn 1s ease-out forwards;
-}
-
-.lab-courses>h2 {
-    font-size: 1.5rem;
-    line-height: 2;
-    color: #d9d8d7ee;
-    background-color: #0f2026ee;
-    box-shadow: 0.2rem 0.2em 0.2em #00000088;
-}
-
-.lab-courses table {
+.table-container {
     width: 100%;
-    line-height: 2;
+    position: relative;
+    overflow-x: auto;
+    box-shadow: var(--shadow-right);
+    border-left: var(--border-accent);
+    margin-bottom: calc(2 * var(--gutter-width));
+}
+
+table {
+    width: 100%;
     border-collapse: collapse;
-    margin-bottom: 2rem;
-    box-shadow: 0.2rem 0.2em 0.2em #00000088;
+    font-size: 0.9em;
+    white-space: nowrap;
 }
 
-.lab-courses table * {
-    border: 1px solid #0f2026ee;
+thead {
+    box-shadow: var(--shadow-all);
 }
 
-.lab-courses thead tr {
-    background-color: #39733d88;
+tr {
+    border-bottom: 1px solid #ccc;
 }
 
-.lab-courses tbody tr:nth-child(2n+1) {
-    background-color: #d9d8d788;
+tr:hover {
+    background-color: #ccc;
 }
 
-.lab-courses tbody tr:nth-child(2n) {
-    background-color: #648c8588;
+td,
+th {
+    padding: 0.5em;
+    text-align: left;
+}
+
+td:hover,
+th:hover {
+    transform: scale(1.02);
+    color: var(--color-accent);
 }

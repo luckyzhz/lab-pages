@@ -1,5 +1,5 @@
 main {
-    padding: calc(var(--gutter-width) * 2);
+    padding: calc(var(--gutter-width) * 2) var(--gutter-width);
 }
 
 main>* {

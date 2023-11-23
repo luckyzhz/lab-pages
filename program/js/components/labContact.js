@@ -13,8 +13,7 @@ const labContact = {
         `
         <div class="lab-contact">
             <div class="lab-map">
-                <iframe :src="contact.embeddedMapUrl" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" width="300" height="300" style="border: none; border-radius: 1rem; box-shadow: 0.2rem 0.2em 0.2em #00000088;"></iframe>
+                <iframe :src="contact.embeddedMapUrl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div>
                 <ul>

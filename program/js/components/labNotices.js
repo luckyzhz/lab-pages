@@ -37,11 +37,6 @@ const labNotices = {
                 <div class="button active" @click.stop="toggleNotices">Ongoing</div>
                 <div class="button" @click.stop="toggleNotices">Completed</div>
             </div>
-            <div class="table-header">
-                <div>Title</div>
-                <div>Coordinator</div>
-                <div>Date</div>
-            </div>
             <lab-notice v-for="notice in notices" :notice="notice" :key="notice.title + notice.date"></lab-notice>
         </div>
         `

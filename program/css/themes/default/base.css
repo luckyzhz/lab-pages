@@ -56,7 +56,7 @@ ol {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 1 auto;
+    flex: 1;
     box-shadow: var(--shadow-all);
     border-radius: var(--border-radius);
 }

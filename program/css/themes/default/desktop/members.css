@@ -1,59 +1,53 @@
-.lab-members h1 {
-    margin-bottom: 1rem;
-}
-
 .lab-members h2 {
     position: sticky;
-    top: 3rem;
-    font-size: 1.5rem;
-    line-height: 2;
-    color: #d9d8d7ee;
-    background-color: #0f2026ee;
-    box-shadow: 0.2rem 0.2em 0.2em #00000088;
-}
-
-.lab-members>*:nth-child(n+2) {
-    animation: fadeIn 1s ease-out forwards;
-}
-
-.lab-members h3 {
-    font-size: 1.2rem;
+    top: 0;
+    background-color: white;
 }
 
 .lab-member {
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 1px;
-    line-height: 2;
-    border: 1px solid #0f2026ee;
-    border-top: 4px solid #0f2026ee;
-    border-radius: 0 0 0.5rem 0.5rem;
-    margin: 1rem 0;
-    background-color: #d9d8d722;
-    box-shadow: 0.2rem 0.2em 0.2em #00000088;
-}
-
-.lab-member>* {
-    flex-grow: 1;
     flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: var(--gutter-width);
+    border-left: var(--border-accent);
+    box-shadow: var(--shadow-right);
+    margin-bottom: var(--gutter-width);
 }
 
-.member-portrait {
+.lab-member:hover {
+    border-left-color: var(--color-accent-bright);
+}
+
+.lab-member .member-portrait {
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: var(--gutter-width);
+}
+
+/* Media query can't use CSS variable */
+@media (max-width: 32rem) {
+    .lab-member .member-portrait {
+        flex: 1 1 100%;
+    }
 }
 
 .member-portrait img {
     display: block;
     width: 8rem;
     height: 8rem;
-    border: 1px solid #0f2026ee;
     border-radius: 8rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem #00000088;
+    box-shadow: var(--shadow-all);
+}
+
+.lab-member .member-info,
+.lab-member .member-research {
+    flex: 1;
+    padding: var(--gutter-width);
 }
 
 .lab-member ul {
-    list-style: none;
+    list-style-type: none;
 }

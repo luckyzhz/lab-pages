@@ -53,15 +53,15 @@ const labGallery = {
         `
         <div class="lab-gallery">
             <h1>Gallery</h1>
-            <div class="albums">
+            <div class="lab-albums">
                 <lab-album v-for="album in this.currentAlbums" :album=album :key="album.title"></lab-album>
             </div>
             <div class="gallery-control">
-                <div class="left-button" @click.stop="currentPage--" v-show="currentPage > 1">&lt;</div>
+                <div class="button" @click.stop="currentPage--" v-show="currentPage > 1">&lt;</div>
                 <div class="to-page">
                     <input @keyup.enter="toPage" :value="currentPage"> / {{ pages }}
                 </div>
-                <div class="right-button" @click.stop="currentPage++" v-show="currentPage < pages">&gt;</div>
+                <div class="button" @click.stop="currentPage++" v-show="currentPage < pages">&gt;</div>
             </div>
         </div>
         `,

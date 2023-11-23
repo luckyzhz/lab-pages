@@ -1,5 +1,5 @@
 @import url(./base.css) layer(base);
-@import url(./animation.css) layer(animation);
+/* @import url(./animation.css) layer(animation); */
 
 @import url(./desktop/nav.css) layer(navigationBar);
 @import url(./desktop/main.css) layer(main);
@@ -9,5 +9,5 @@
 @import url(./desktop/courses.css) layer(courses);
 @import url(./desktop/notices.css) layer(notices);
 @import url(./desktop/members.css) layer(members);
-/* @import url(./desktop/gallery.css) layer(gallery); */
+@import url(./desktop/gallery.css) layer(gallery);
 /* @import url(./desktop/contacts.css) layer(contacts); */

@@ -1,24 +1,18 @@
-.lab-gallery h1 {
-    margin-bottom: 1rem;
-}
-
-.lab-gallery>.albums {
+.lab-albums {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: var(--gutter-width);
 }
 
 .lab-album {
     cursor: zoom-in;
-    animation: fadeIn 1s ease-out forwards;
+    animation: var(--animation-fade-in);
 }
 
 .lab-album.open {
     cursor: zoom-out;
 }
 
-/* -------------Image----------- */
 .lab-gallery img {
     display: block;
     max-width: 100%;
@@ -28,8 +22,8 @@
 /* ------用于子元素的定位参考------- */
 .lab-album .image-box {
     position: relative;
-    border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2em 0.2em #00000088;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-all);
     /* overflow 甚至决定了 max-height 能否生效 */
     overflow: hidden;
 }
@@ -41,7 +35,8 @@
     padding-top: calc(100% * 9 / 16);
 }
 
-*[class="lab-album"] .image-box img {
+*[class="lab-album"] img {
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -64,12 +59,12 @@
     display: none;
     cursor: pointer;
     position: absolute;
-    width: 2rem;
+    padding: var(--gutter-width);
     top: 0;
     bottom: 0;
     color: white;
-    background-color: #0f202688;
-    font-size: 1.5rem;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-size: var(--h3-font-size);
 }
 
 .image-box .left-button {
@@ -100,33 +95,35 @@
     top: 0;
     width: 100dvw;
     height: 100dvh;
-    background-color: #000000bb;
+    background-color: rgb(0, 0, 0, 0.5);
     color: white;
 }
 
 /* -----整个 gallery 的页面控制按钮----- */
 .gallery-control {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    line-height: 2rem;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    animation: fadeIn 1s ease-out forwards;
+    gap: var(--gutter-width);
+    animation: var(--animation-fade-in);
+}
+
+.gallery-control .to-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-control input {
-    font-family: Arial, sans-serif;
-    font-size: 1.2rem;
+    font-family: var(--font-stack);
+    font-size: 1rem;
     text-align: center;
-    width: 3em;
-    height: 100%;
+    width: 2em;
     padding: 0;
     margin: 0;
 }
 
-.gallery-control .left-button,
-.gallery-control .right-button {
-    cursor: pointer;
+.gallery-control .button {
+    border: none;
+    flex: 0 0 1.5em;
 }

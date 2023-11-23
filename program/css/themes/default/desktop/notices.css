@@ -20,6 +20,11 @@
     gap: 1px;
     border-left: var(--border-accent);
     box-shadow: var(--shadow-right);
+    cursor: pointer;
+}
+
+.lab-notice .summary:hover {
+    border-left-color: var(--color-accent-bright);
 }
 
 .lab-notice .summary>* {

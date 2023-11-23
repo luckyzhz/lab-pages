@@ -6,7 +6,6 @@
 
 .lab-album {
     cursor: zoom-in;
-    animation: var(--animation-fade-in);
 }
 
 .lab-album.open {
@@ -105,7 +104,6 @@
     align-items: center;
     justify-content: center;
     gap: var(--gutter-width);
-    animation: var(--animation-fade-in);
 }
 
 .gallery-control .to-page {

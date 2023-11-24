@@ -1,1 +1,17 @@
 @import url(./carousel.css) layer(carousel);
+
+.lab-introduction {
+    box-shadow: var(--shadow-right);
+    border-left: var(--border-accent);
+    text-align: justify;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+    padding: calc(var(--gutter-width) * 2);
+    margin-bottom: calc(2 * var(--gutter-width));
+}
+
+.lab-introduction:hover {
+    transform: scale(1.02);
+    border-left-color: var(--color-accent-bright);
+}

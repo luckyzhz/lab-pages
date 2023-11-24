@@ -10,6 +10,7 @@ import {
 } from "./components/components.js";
 
 // Set all the urls needed
+const homeIntroductionUrl = `config/Home/introduction.txt`;
 const homeCarouselImagesUrl = `config/Home/images.json`;
 const coursesUrl = `config/Courses/Courses.md`;
 const contactsUrl = `config/Contacts/Contacts.json`;
@@ -40,6 +41,7 @@ const routes = [
         path: "/",
         component: labHome,
         props: {
+            introductionUrl: homeIntroductionUrl,
             carouselImagesUrl: homeCarouselImagesUrl,
         }
     },

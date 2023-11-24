@@ -74,9 +74,13 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    padding: 0.5rem;
     position: absolute;
     bottom: 0;
     margin-bottom: 1rem;
+    background-color: rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px white;
+    border-radius: 4px;
 }
 
 .carousel-window .indicator {
@@ -84,12 +88,11 @@
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 10rem;
-    background-color: #d9d8d788;
-    border: 1px solid #0f2026ee;
-    box-shadow: 0 0 0.5rem white;
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 0 0 4px black;
 }
 
 .carousel-window .indicator.active {
     width: 1rem;
-    background-color: #648c85ee;
+    background-color: rgb(255, 255, 255, 0.9);
 }

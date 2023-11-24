@@ -23,8 +23,7 @@ label[for="toggle-nav"] {
 
 
 
-#toggle-nav:checked~main,
-#toggle-nav:checked~footer {
+#toggle-nav:checked~#app {
     margin-left: var(--nav-width);
 }
 
@@ -50,7 +49,7 @@ nav {
     font-size: var(--h3-font-size);
 }
 
-#toggle-nav:checked~nav {
+#toggle-nav:checked~#app nav {
     transform: translateX(0);
     opacity: 1;
 }

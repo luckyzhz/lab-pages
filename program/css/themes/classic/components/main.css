@@ -1,10 +1,13 @@
 main {
-    padding: calc(var(--gutter-width) * 2) var(--gutter-width);
+    margin: auto;
+    padding: calc(var(--gutter-width) * 4) var(--gutter-width);
+    max-width: var(--breakpoint-desktop);
 }
 
-main>* {
-    max-width: var(--breakpoint-desktop);
-    margin: auto;
+h1 {
+    margin-bottom: calc(var(--gutter-width) * 2);
+    text-align: center;
+    animation: var(--animation-fade-in);
 }
 
 h1::first-letter {
@@ -14,10 +17,4 @@ h1::first-letter {
     display: inline-block;
     padding: 0 0.25em;
     border-radius: var(--border-radius);
-}
-
-h1 {
-    margin: calc(var(--gutter-width) * 2) 0;
-    text-align: center;
-    animation: var(--animation-fade-in);
 }

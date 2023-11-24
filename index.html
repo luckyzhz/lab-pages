@@ -17,9 +17,11 @@
 </head>
 
 <body>
+    <!-- Use a checkbox to record the on/off state of the navigation bar. -->
+    <input type="checkbox" id="toggle-nav" class="toggle" style="display: none;">
+    <label for="toggle-nav" class="button">☰</label>
+
     <div id="app">
-        <input type="checkbox" id="toggle-nav" class="toggle" style="display: none;">
-        <label for="toggle-nav" class="button">☰</label>
         <nav>
             <a href="#"><img src="./config/Home/images/logo.svg"></a>
             <router-link to="/research">Research</router-link>

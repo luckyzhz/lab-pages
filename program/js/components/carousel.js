@@ -54,12 +54,12 @@ const carousel = {
         `
         <div class="carousel-window" @click.stop="toggleFullScreen" @mouseover="stopAutoPlay" @mouseout="startAutoPlay">
             <div class="images-bar" ref="imagesBar">
-                <div class="image-box" v-for="image in images">
+                <div class="image-box" v-for="image in images" :key=image>
                     <img :src="image">
                 </div>
             </div>
             <div class="control" ref="control">
-                <div v-for="(image, index) in images" :data-index="index" :key=index
+                <div v-for="(image, index) in images" :data-index="index" :key=image
                 :class="{indicator: true, active: index===currentImage}"
                     @click.stop="goToImage(index)"></div>
             </div>

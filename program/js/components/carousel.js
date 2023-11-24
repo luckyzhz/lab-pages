@@ -59,7 +59,8 @@ const carousel = {
                 </div>
             </div>
             <div class="control" ref="control">
-                <div class="indicator" v-for="(image, index) in images" :data-index="index" :key=index
+                <div v-for="(image, index) in images" :data-index="index" :key=index
+                :class="{indicator: true, active: index===currentImage}"
                     @click.stop="goToImage(index)"></div>
             </div>
         </div>

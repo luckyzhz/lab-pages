@@ -6,9 +6,11 @@ import {
     labGallery,
     labNotices,
     labPublications,
+    labHome,
 } from "./components/components.js";
 
 // Set all the urls needed
+const homeCarouselImagesUrl = `config/Home/images.json`;
 const coursesUrl = `config/Courses/Courses.md`;
 const contactsUrl = `config/Contacts/Contacts.json`;
 const researchUrl = `config/Research/Research.json`;
@@ -34,6 +36,13 @@ const memberUrls = function () {
 
 // Configure routes information
 const routes = [
+    {
+        path: "/",
+        component: labHome,
+        props: {
+            carouselImagesUrl: homeCarouselImagesUrl,
+        }
+    },
     {
         path: "/courses",
         component: labCourses,

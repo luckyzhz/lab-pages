@@ -5,7 +5,7 @@ const carousel = {
         return {
             images: [],
             currentImage: 0,
-            carouselInterval: {},
+            carouselInterval: null,
         }
     },
     props: {

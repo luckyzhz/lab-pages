@@ -11,6 +11,7 @@ import { labCourses } from "./labCourses.js";
 import { labGallery } from "./labGallery.js";
 import { labNotices } from "./labNotices.js";
 import { labPublications } from "./labPublications.js";
+import { labHome } from "./labHome.js";
 
 export {
     capitalize,
@@ -24,4 +25,5 @@ export {
     labGallery,
     labNotices,
     labPublications,
+    labHome,
 };

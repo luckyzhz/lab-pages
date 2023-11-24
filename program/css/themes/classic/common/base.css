@@ -11,7 +11,7 @@
     --shadow-bottom: 0 4px 4px rgb(0, 0, 0, 0.5);
     --shadow-left: -4px 0 4px rgb(0, 0, 0, 0.5);
     --shadow-right: 4px 0 4px rgb(0, 0, 0, 0.5);
-    --shadow-all: 0 0 4px rgb(0, 0, 0, 0.8);
+    --shadow-all: 0 0 4px rgb(0, 0, 0, 0.5);
     /* border and gutter */
     --border: 1px solid black;
     --border-bold: 4px solid black;

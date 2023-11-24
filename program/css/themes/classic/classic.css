@@ -4,7 +4,7 @@
 /* Components's style */
 @import url(./components/nav.css) layer(nav);
 @import url(./components/main.css) layer(main);
-/* @import url(./components/home.css) layer(home); */
+@import url(./components/home.css) layer(home);
 @import url(./components/research.css) layer(research);
 @import url(./components/publications.css) layer(publications);
 @import url(./components/courses.css) layer(courses);

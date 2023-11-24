@@ -1,16 +1,11 @@
 import { router } from "./router.js";
 
-import { carousel } from "./components/carousel.js";
-
-
-
-// router can access app's properties through ` router.app`
+// router can access app's properties through `router.app`
 const app = new Vue({
     el: "#app",
     components: {
         // Components has been registered in routers
         // "lab-members": labMembers,
-        "carousel": carousel
     },
     data: {
     },

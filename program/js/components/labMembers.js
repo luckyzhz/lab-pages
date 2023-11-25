@@ -5,40 +5,48 @@ const labMembers = {
     data: function () {
         return {
             members: [],
+            categories: [
+                "Professor",
+                "Postdoctoral",
+                "PhD",
+                "Master",
+                "Undergraduate",
+            ]
         }
     },
     props: {
-        "memberUrls": Object,
+        "membersUrlBase": String,
     },
     components: {
         "lab-member": labMember,
     },
-    template:
-        `
-        <div class="lab-members">
-            <h1>Members</h1>
-            <div v-for="(members, category) in members" :class="category" :key="category">
-                <h2>{{category}}</h2>
-                <div>
-                    <lab-member v-for="member in members" :member="member" :key="member.email"></lab-member>
-                </div>
-            </div>
-        </div>
-        `,
     methods: {
         fetchMembers: async function () {
-            const result = {};
-            for (const category in this.memberUrls) {
-                const currentMembers =
-                    await fetchJson(this.memberUrls[category]);
-                result[category] = currentMembers;
+            const result = [];
+            let url;
+            for (const category of this.categories) {
+                url = this.membersUrlBase + category + ".json";
+                const currentMembers = await fetchJson(url);
+                result.push(currentMembers);
             }
             this.members = result;
         },
     },
     created: async function () {
         this.fetchMembers();
-    }
+    },
+    template:
+        `
+        <div class="lab-members">
+            <h1>Members</h1>
+            <div v-for="(currentMembers, index) in members" :class="categories[index]" :key="categories[index]">
+                <h2>{{ categories[index] }}</h2>
+                <div>
+                    <lab-member v-for="member in currentMembers" :member="member" :key="member.email"></lab-member>
+                </div>
+            </div>
+        </div>
+        `,
 }
 
 export { labMembers };

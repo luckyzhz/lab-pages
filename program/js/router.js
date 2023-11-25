@@ -18,22 +18,7 @@ const researchUrl = `config/Research/Research.json`;
 const galleryUrl = `config/Gallery/Gallery.json`;
 const noticesUrlBase = `config/Notices/`;
 const publicationsUrlBase = `config/Publications/`;
-const memberCategories = [
-    "Professor",
-    "Postdoctoral",
-    "PhD",
-    "Master",
-    "Undergraduate"
-];
-const memberUrls = function () {
-    const base = `config/Members/`;
-    const result = {};
-    for (const category of memberCategories) {
-        result[category] = base + category + ".json";
-    }
-    return result;
-}();
-
+const membersUrlBase = `config/Members/`
 
 // Configure routes information
 const routes = [
@@ -70,7 +55,7 @@ const routes = [
         path: "/members",
         component: labMembers,
         props: {
-            memberUrls: memberUrls,
+            membersUrlBase: membersUrlBase,
         },
     },
     {

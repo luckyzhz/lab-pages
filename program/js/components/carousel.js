@@ -50,6 +50,9 @@ const carousel = {
         this.fetchImages();
         this.startAutoPlay();
     },
+    beforeDestroy: function () {
+        clearInterval(this.carouselInterval);
+    },
     template:
         `
         <div class="carousel-window" @click.stop="toggleFullScreen" @mouseover="stopAutoPlay" @mouseout="startAutoPlay">
@@ -58,7 +61,7 @@ const carousel = {
                     <img :src="image">
                 </div>
             </div>
-            <div class="control" ref="control">
+            <div class="control" ref="control" @click.stop>
                 <div v-for="(image, index) in images" :data-index="index" :key=image
                 :class="{indicator: true, active: index===currentImage}"
                     @click.stop="goToImage(index)"></div>

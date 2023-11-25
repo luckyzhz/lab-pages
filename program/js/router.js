@@ -1,24 +1,24 @@
 import {
-    labCourses,
-    labContacts,
-    labMembers,
-    labResearches,
-    labGallery,
-    labNotices,
-    labPublications,
     labHome,
+    labResearches,
+    labPublications,
+    labCourses,
+    labNotices,
+    labMembers,
+    labGallery,
+    labContacts,
 } from "./components/components.js";
 
 // Set all the urls needed
 const homeIntroductionUrl = `config/Home/introduction.txt`;
 const homeCarouselImagesUrl = `config/Home/images.json`;
-const coursesUrl = `config/Courses/Courses.md`;
-const contactsUrl = `config/Contacts/Contacts.json`;
 const researchUrl = `config/Research/Research.json`;
-const galleryUrl = `config/Gallery/Gallery.json`;
-const noticesUrlBase = `config/Notices/`;
 const publicationsUrlBase = `config/Publications/`;
-const membersUrlBase = `config/Members/`
+const coursesUrl = `config/Courses/Courses.md`;
+const noticesUrlBase = `config/Notices/`;
+const membersUrlBase = `config/Members/`;
+const galleryUrl = `config/Gallery/Gallery.json`;
+const contactsUrl = `config/Contacts/Contacts.json`;
 
 // Configure routes information
 const routes = [
@@ -31,6 +31,20 @@ const routes = [
         }
     },
     {
+        path: "/research",
+        component: labResearches,
+        props: {
+            researchUrl: researchUrl,
+        }
+    },
+    {
+        path: "/publications",
+        component: labPublications,
+        props: {
+            publicationsUrlBase: publicationsUrlBase,
+        },
+    },
+    {
         path: "/courses",
         component: labCourses,
         props: {
@@ -38,18 +52,11 @@ const routes = [
         }
     },
     {
-        path: "/contacts",
-        component: labContacts,
+        path: "/notices",
+        component: labNotices,
         props: {
-            contactsUrl: contactsUrl,
-        }
-    },
-    {
-        path: "/research",
-        component: labResearches,
-        props: {
-            researchUrl: researchUrl,
-        }
+            noticesUrlBase: noticesUrlBase,
+        },
     },
     {
         path: "/members",
@@ -66,20 +73,14 @@ const routes = [
         },
     },
     {
-        path: "/notices",
-        component: labNotices,
+        path: "/contacts",
+        component: labContacts,
         props: {
-            noticesUrlBase: noticesUrlBase,
-        },
-    },
-    {
-        path: "/publications",
-        component: labPublications,
-        props: {
-            publicationsUrlBase: publicationsUrlBase,
-        },
+            contactsUrl: contactsUrl,
+        }
     },
 ];
+
 const router = new VueRouter({
     routes: routes,
 })

@@ -1,5 +1,5 @@
 main {
-    margin: auto;
+    margin: 0 auto;
     padding: calc(var(--gutter-width) * 4) var(--gutter-width);
     max-width: var(--breakpoint-desktop);
 }

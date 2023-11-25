@@ -67,7 +67,7 @@ nav a {
 }
 
 nav a:hover,
-.router-link-active {
+.router-link-exact-active {
     font-weight: bolder;
     color: var(--color-accent);
     box-shadow: var(--shadow-bottom);
@@ -83,7 +83,7 @@ nav>a:first-child {
 }
 
 nav>a:first-child:hover,
-.router-link-active:first-child {
+.router-link-exact-active:first-child {
     border-bottom-color: var(--color-accent);
 }
 
